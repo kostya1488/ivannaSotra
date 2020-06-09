@@ -10,6 +10,8 @@
     <!-- for Gallery -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
     <!-- ----------- -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/code-fx/Pure-CSS3-Animated-Border@V1.0/css/animated-border/animated-border.min.css
     ">
@@ -70,8 +72,28 @@
         </section>
         <!-- hidden -->
         <div class="aboutMeTouch contentTitle">
-            <p>Элитная проститутка Иванна</p>
+            <p>ЭЛИТНАЯ ПРОСТИТУТКА ИВАННА</p>
         </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/1.jpg" /></div>
+                <div class="swiper-slide"><img src="assets/img/2.jpg" /></div>
+                <div class="swiper-slide"><img src="assets/img/3.jpg" /></div>
+                <div class="swiper-slide"><img src="assets/img/4.jpg" /></div>
+                <div class="swiper-slide"><img src="assets/img/5.jpg" /></div>
+                <div class="swiper-slide"><img src="assets/img/6.jpg" /></div>
+                <div class="swiper-slide"><img src="assets/img/7.jpg" /></div>
+                <div class="swiper-slide"><img src="assets/img/8.jpg" /></div>
+                <div class="swiper-slide"><img src="assets/img/9.jpg" /></div>
+
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
         <!-- ------ -->
 
         <section id="gallery" class="photoArea wrapper">
@@ -305,6 +327,16 @@
     </footer>
     <script src="js/scripts.js"></script>
     <script src="js/lightbox-plus-jquery.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
 
 </body>
 
