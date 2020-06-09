@@ -10,6 +10,8 @@
     <!-- for Gallery -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
     <!-- ----------- -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/code-fx/Pure-CSS3-Animated-Border@V1.0/css/animated-border/animated-border.min.css
     ">
@@ -26,10 +28,11 @@
                     <li><a href="#gallery">Photo</a></li>
                     <li><a href="#videoSotra">Video</a></li>
                     <li><a href="#services">Services</a></li> 
-                    <li class="m-l lang"><a class="check" href="">RU</a></li>
-                    <li class="lang"><a class="uncheck" href="indexEn.html">EN</a> </li>                                                   
+                    <li class="m-l-eng lang"><a class="uncheck" href="index.html">RU</a></li>
+                    <li class=" lang"><a class="check" href="indexEn.html">EN</a> </li> 
+                                                    
                 </ul>
-                <div class="toggle"><span><a class="check" href="">RU</a></span><span>☰</span><span><a class="touchLang" href="indexEn.html">EN</a></span></div>
+                <div class="toggle"><span><a class="" href="index.html">RU</a></span><span>☰</span><span><a class="check" href="indexEn.html">EN</a></span></div>
             </label>
         </div>
     </header>
@@ -51,13 +54,14 @@
             </div>
 
             <div class="aboutMeText">
-                <p> I have luxurious hair, velvet tanned skin, a magnificent stretch, cat's flexibility, elastic butt, a thin waist and a radiant smile. I lead a healthy lifestyle: I don’t drink, don’t smoke, I go in for sports regularly. I love sex, men
-                    and money! </p>
+                <p>I have luxurious hair, velvet tanned skin, a magnificent stretch, cat's flexibility, elastic butt, a thin waist and a radiant smile. I lead a healthy lifestyle: I don’t drink, don’t smoke, I go in for sports regularly. I love sex, men
+                    and money!</p>
             </div>
 
             <div class="aboutMeContacts">
                 <div class="contactAdress">
-                    <p> Kiev • Basseynaya 12 <br> Shevchenkivskyi district </p>
+                    <p>Kiev • Basseynaya 12
+                        <br>Shevchenkivskyi district</p>
                 </div>
                 <div class="contactNumber">
                     <a href="tel:+380996661488">+380 (99) 666-14-88</a>
@@ -71,8 +75,28 @@
         </section>
         <!-- hidden -->
         <div class="aboutMeTouch contentTitle">
-            <p>Elite prostitute Ivanna</p>
+            <p>ELITE PROSTITUTE IVANNA</p>
         </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/1.jpg" /></div>
+                <div class="swiper-slide"><img src="assets/img/2.jpg" /></div>
+                <div class="swiper-slide"><img src="assets/img/3.jpg" /></div>
+                <div class="swiper-slide"><img src="assets/img/4.jpg" /></div>
+                <div class="swiper-slide"><img src="assets/img/5.jpg" /></div>
+                <div class="swiper-slide"><img src="assets/img/6.jpg" /></div>
+                <div class="swiper-slide"><img src="assets/img/7.jpg" /></div>
+                <div class="swiper-slide"><img src="assets/img/8.jpg" /></div>
+                <div class="swiper-slide"><img src="assets/img/9.jpg" /></div>
+
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
         <!-- ------ -->
 
         <section id="gallery" class="photoArea wrapper">
@@ -106,8 +130,9 @@
         </section>
         <!-- hidden -->
         <div class="aboutMeTouch aboutMeText">
-            <p> I have luxurious hair, velvet tanned skin, a magnificent stretch, cat's flexibility, elastic butt, a thin waist and a radiant smile. I lead a healthy lifestyle: I don’t drink, don’t smoke, I go in for sports regularly. I love sex, men and
-                money! </p>
+            <p>I have luxurious hair, velvet tanned skin, a magnificent stretch, cat's flexibility, elastic butt, a thin waist and a radiant smile. I lead a healthy lifestyle: I don’t drink, don’t smoke, I go in for sports regularly. I love sex, men and
+                money!
+            </p>
         </div>
         <!-- ------ -->
         <section id="services" class="servicesArea wrapper">
@@ -120,7 +145,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="tarif p12">2 часа</div>
+                        <div class="tarif p12">2 hours</div>
                         <div class="price text-color-white">
                             <p>8000 uah</p>
                         </div>
@@ -138,10 +163,11 @@
                 </video>
 
                 <div class="contactAdressTouch">
-                    <p> Kiev • Basseynaya 12 <br> Shevchenkivskyi district </p>
+                    <img src="assets/marker.svg">
+                    <p> Kiev • Basseynaya 12 Shevchenkivskyi district</p>
                 </div>
 
-                <div class="borderBlock parameters wrapper750">
+                <div class="borderBlock wrapper750">
                     <div>
                         <div class="param-icon">
                             <img src="assets/zapatos.svg" alt="Z">
@@ -178,7 +204,7 @@
                             <p class="param-value">47</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="hideOnPhone">
                         <div class="param-icon">
                             <img src="assets/zapatos.svg" alt="Z">
                         </div>
@@ -187,7 +213,7 @@
                             <p class="param-value">Yes</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="hideOnPhone">
                         <div class="param-icon">
                             <img src="assets/zapatos.svg" alt="Z">
                         </div>
@@ -201,51 +227,81 @@
 
             <div class="servicesList">
                 <div class="servListCol greenCheck">
-                    <div>
-                        <p>Basic Services</p>
-                        <ul>
-                            <li> Classic sex </li>
-                            <li> Blowjob in a condom </li>
-                            <li> Erotic massage </li>
-                            <li> Striptease </li>
-                        </ul>
+                    <div class="mob-titleIfServList">
+                        <p>Basic Services
+
+                        </p>
+                        <hr />
                     </div>
-                    <div class="otherInfoTouch alertaRed">
-                        <li> Dear men! I do not provide virtual sex or phone sex services. Respect your time and others. </li>
+                    <div class="mob-servList">
+                        <ul class="mob-greenCheck">
+                            <li> Classic sex
+                            </li>
+                            <li>Blowjob in a condom
+                            </li>
+                            <li>Erotic massage
+                            </li>
+                            <li>Striptease
+                            </li>
+
+                        </ul>
+                        <ul class="otherInfoTouch mob-attentionRed ">
+                            <li>Dear men! I do not provide virtual sex or phone sex services. Respect your time and others.
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="servListCol yellowCheck">
-                    <div>
-                        <p>Extra Services</p>
-                        <ul>
-                            <li> Lesbian Sex </li>
-                            <li> Anal sex </li>
-                            <li> Group sex </li>
-                            <li> Blowjob without a condom </li>
-                            <li> Cooney </li>
-                            <li> Pose 69 </li>
+                    <div class="mob-titleIfServList">
+                        <p>Extra Services
+
+                        </p>
+                        <hr />
+                    </div>
+                    <div class="mob-servList">
+                        <ul class="mob-yellowCheck">
+                            <li>Lesbian Sex
+                            </li>
+                            <li>Anal sex
+                            </li>
+                            <li>Group sex
+                            </li>
+                            <li>Blowjob without a condom
+                            </li>
+                            <li>Cooney</li>
+                            <li>Pose 69
+                            </li>
+
                         </ul>
-                    </div>
-                    <div class="otherInfoTouch">
-                        <div class="alertaYellow">
-                            <li> The cost of additional services can be found only by phone number </li>
-                        </div>
-                        <div class="otherInfoContacts">
-                            <p><a href="tel:+380996661488">+380 (99) 666-14-88</a></p>
-                            <div class="contactSocial">
-                                <a href="tg://"><img src="assets/social icons/telegram.svg" alt="t"></a>
-                                <a href="https://wa.me/1XXXXXXXXXX"><img src="assets/social icons/whatsapp.svg" alt="w"></a>
-                                <a href="viber://"><img src="assets/social icons/viber.svg" alt="v"></a>
+
+                        <div>
+                            <ul class="otherInfoTouch mob-attentionYellow">
+                                <li>The cost of additional services can be found only by phone number
+                                </li>
+                            </ul>
+                            <div class="mob-socialContacts">
+                                <a href="tel:+380996661488">+380 (99) 666-14-88</a>
+                                <div class="contactSocial">
+                                    <a href="tg://"><img h src="assets/social icons/telegram.svg" alt="t"></a>
+                                    <a href="https://wa.me/1XXXXXXXXXX"><img src="assets/social icons/whatsapp.svg" alt="w"></a>
+                                    <a href="viber://"><img src="assets/social icons/viber.svg" alt="v"></a>
+                                </div>
                             </div>
+
                         </div>
                     </div>
+
+
+
                 </div>
+            </div>
 
             </div>
 
             <div class="otherInfo wrapper750">
                 <div class="alertaYellow">
-                    <li> The cost of additional services can be found only by phone number </li>
+                    <li>The cost of additional services can be found only by phone number
+                    </li>
                 </div>
                 <div class="otherInfoContacts">
                     <a href="tel:+380996661488">+380 (99) 666-14-88</a>
@@ -256,7 +312,7 @@
                     </div>
                 </div>
                 <div class="alertaRed">
-                    <li> Dear men! I do not provide virtual sex or phone sex services. Respect your time and others. </li>
+                    <li>Dear men! I do not provide virtual sex or phone sex services. Respect your time and others.</li>
                 </div>
             </div>
         </section>
@@ -279,21 +335,32 @@
                     <a href="#aboutMe">About me</a>
                 </li>
                 <li>
-                    <a href="#gallery">Photos</a>
+                    <a href="#gallery">Photo</a>
                 </li>
                 <li>
                     <a href="#videoSotra">Video</a>
                 </li>
                 <li>
-                    <a href="#services">Sex Services</a>
+                    <a href="#services">Services</a>
                 </li>
             </ul>
-            <p>2020 Copyright by Kievescorts.com</p>
+            <p>© 2020 Ivanna Escort</p>
         </div>
 
     </footer>
     <script src="js/scripts.js"></script>
     <script src="js/lightbox-plus-jquery.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+
 </body>
 
 </html>
