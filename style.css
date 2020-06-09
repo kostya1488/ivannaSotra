@@ -508,6 +508,8 @@ footer {
     /* ----------------------------------------------------- */
     .swiper-container {
         display: block;
+        width: 100%;
+        height: 100%;
     }
     /* html,
     body {
@@ -521,10 +523,6 @@ footer {
         margin: 0;
         padding: 0;
     } */
-    .swiper-container {
-        width: 100%;
-        height: 100%;
-    }
     .swiper-slide {
         text-align: center;
         /* font-size: 18px; */
@@ -703,6 +701,9 @@ footer {
     }
     .footerContent p {
         color: #fff;
+    }
+     :root {
+        --swiper-navigation-size: 24px!important;
     }
 }
 
