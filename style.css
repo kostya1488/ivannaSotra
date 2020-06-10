@@ -13,13 +13,10 @@ html {
     overflow-x: hidden;
     background-color: #212121;
     font-family: 'Raleway', sans-serif;
-    scrollbar-color: #458245 #714826;
-    /* «цвет ползунка» «цвет полосы скроллбара» */
-    scrollbar-width: none;
 }
 
 
-/* --------------------------------------------------------- */
+/* -----------------------------all---------------------------- */
 
 .wrapper {
     margin: 0 auto;
@@ -27,24 +24,120 @@ html {
     width: 100%;
 }
 
-
-/* -------------------------------------------------------- */
-
-header {
-    background-color: #000;
-    display: flex;
+.wrapper750 {
+    margin: 0 auto;
+    max-width: 750px;
+    width: 100%;
 }
 
 #checkbox-menu,
-.toggle {
+.toggle,
+.aboutMeTouch,
+.contactAdressTouch,
+.otherInfoTouch,
+.aboutMeContactsTouch,
+.mob-socialContacts,
+.mob-titleIfServList hr,
+.swiper-container {
     display: none;
 }
 
-.menu {
+.menu li a:hover,
+.menu li a.check {
+    border-bottom: 1px solid #ffa500;
+}
+
+.contentTitle,
+.menu li a,
+.aboutMeText,
+.contactAdress,
+p.param-value,
+.otherInfoContacts a,
+.footerContent li a,
+.servListCol,
+.alertaYellow li,
+.alertaRed li,
+.text-color-white p {
+    color: #fff;
+}
+
+header,
+.menu,
+.aboutMePhotoBlock,
+.aboutMeContacts,
+.contactAdress,
+.contactSocial,
+.borderBlock,
+.servicesList,
+.otherInfoContacts,
+.footerContent ul {
     display: flex;
-    list-style-type: none;
-    height: 80px;
+}
+
+.aboutMePhotoBlock,
+.aboutMeContacts,
+.borderBlock {
+    justify-content: space-between;
+}
+
+.contactAdress,
+.contactSocial,
+menu,
+.otherInfoContacts {
     align-items: center;
+}
+
+.aboutMePhotoBlock,
+.aboutMeContacts,
+.contactSocial,
+.borderBlock {
+    flex-wrap: nowrap;
+}
+
+.contactNumber a,
+.otherInfoContacts a,
+.footerContent li a,
+.menu li a {
+    text-decoration: none;
+}
+
+.menu li a,
+.contactAdress,
+.contactNumber,
+.tarif {
+    white-space: nowrap;
+}
+
+.contentTitle,
+.price,
+.tarif,
+.param-item,
+.footerContent p {
+    text-align: center;
+}
+
+.otherInfoContacts a,
+.contactNumber a,
+.price p,
+p.param-value,
+.servListCol {
+    font-family: 'CenturyGothic';
+}
+
+
+/* ------------------------- header ------------------------ */
+
+header {
+    background-color: #000;
+}
+
+.menu,
+.footerContent ul {
+    list-style-type: none;
+}
+
+.menu {
+    height: 80px;
 }
 
 .menu li {
@@ -62,16 +155,13 @@ header {
 }
 
 .menu li a {
-    color: white;
-    text-decoration: none;
-    white-space: nowrap;
     padding: 1px 0;
     font-size: 15px;
     font-weight: 600;
 }
 
-.menu li a:hover {
-    border-bottom: 1px solid #ffa500;
+.menu li a.uncheck {
+    color: rgb(102, 102, 102);
 }
 
 .m-l {
@@ -82,30 +172,13 @@ header {
     margin-left: 437px;
 }
 
-.menu li a.check {
-    color: white;
-    border-bottom: 1px solid #ffa500;
-}
 
-.menu li a.uncheck {
-    color: rgb(102, 102, 102);
-}
-
-
-/* ------------------------------------------------------- */
+/* -------------------------aboutMePhotoBlock------------------------------ */
 
 .contentTitle {
-    text-align: center;
-    color: #fff;
+    padding: 15px 20px;
     font-size: 48px;
     font-weight: 900;
-    padding: 15px 20px;
-}
-
-.aboutMePhotoBlock {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
 }
 
 .aboutMePhotoBlock div {
@@ -113,7 +186,8 @@ header {
     width: 400px;
 }
 
-.aboutMePhotoBlock div img {
+.aboutMePhotoBlock div img,
+.photoArea img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -121,49 +195,35 @@ header {
 }
 
 .aboutMeText {
-    color: #fff;
     padding: 15px 10px;
     font-size: 16px;
     letter-spacing: 0.2px;
 }
 
 .aboutMeContacts {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
     padding: 25px 0 15px 0;
 }
 
 .contactAdress {
-    display: flex;
-    align-items: center;
-    color: #fff;
     font-size: 14px;
     padding: 0 10px;
-    white-space: nowrap;
 }
 
 .contactNumber {
-    border-radius: 50px;
     background-color: #edbe90;
-    font-size: 30px;
-    white-space: nowrap;
-    font-weight: 700;
     padding: 2px 30px;
+    border-radius: 50px;
     letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .contactNumber a {
-    text-decoration: none;
-    color: #000;
-    font-family: 'CenturyGothic';
     font-weight: bold;
+    color: #000;
 }
 
 .contactSocial {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
     justify-content: flex-end;
     width: 143px;
     padding: 0 10px;
@@ -174,33 +234,16 @@ header {
     margin-left: 15px;
 }
 
-.aboutMeTouch,
-.contactAdressTouch,
-.otherInfoTouch,
-.aboutMeContactsTouch,
-.mob-socialContacts,
-.mob-titleIfServList hr,
-.swiper-container {
-    display: none;
-}
 
-
-/* -------------------------------------------------- */
+/* -----------------------photoArea--------------------------- */
 
 .photoArea {
-    height: 820px;
     display: grid;
-    grid-template-columns: 270px 270px 270px;
-    grid-template-rows: 270px 270px 270px;
     justify-content: space-between;
     align-content: space-between;
-}
-
-.photoArea img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 0 0;
+    height: 820px;
+    grid-template-columns: 270px 270px 270px;
+    grid-template-rows: 270px 270px 270px;
 }
 
 .photoArea img:hover {
@@ -208,13 +251,7 @@ header {
 }
 
 
-/* -------------------------------------------------- */
-
-.wrapper750 {
-    margin: 0 auto;
-    max-width: 750px;
-    width: 100%;
-}
+/* -------------------------servicesArea------------------------- */
 
 .servicesArea {
     margin-top: 15px;
@@ -223,44 +260,33 @@ header {
 
 .borderBlock {
     padding: 12px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
 }
 
 .price {
     border: 1px solid #353535;
     border-radius: 50px;
     padding: 10px 25px;
-    text-align: center;
 }
 
 .text-color-yellow p {
     color: #edbe90;
 }
 
-.text-color-white p {
-    color: white;
-}
-
 .price p {
     width: 150px;
     font-size: 22px;
-    font-family: 'CenturyGothic';
     font-weight: 700;
     letter-spacing: 2px;
 }
 
 .tarif {
-    padding: 0 7px;
-    color: #7a7a7a;
-    white-space: nowrap;
-    text-align: center;
-    width: 50px;
-    background-color: #181818;
     position: relative;
+    color: #7a7a7a;
+    background-color: #181818;
+    width: 50px;
     top: 7px;
     left: 68px;
+    padding: 0 7px;
     font-size: 16px;
 }
 
@@ -272,17 +298,16 @@ header {
 /* ------------------------------------ */
 
 video {
-    padding: 0 20px;
     width: -webkit-fill-available;
     height: 500px;
+    padding: 0 20px;
 }
 
 .param-item {
     width: 100px;
+    padding: 14px 5px;
     border: 1px solid #353535;
     border-radius: 14px;
-    text-align: center;
-    padding: 14px 5px;
 }
 
 .param-item p {
@@ -291,18 +316,16 @@ video {
 }
 
 p.param-value {
-    font-size: 24px;
-    font-family: 'CenturyGothic';
-    font-weight: bold;
-    color: #fff;
-    letter-spacing: 2px;
     padding-top: 4px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .param-icon {
-    padding-left: 10px;
-    width: 30px;
     position: relative;
+    width: 30px;
+    padding-left: 10px;
     background-color: #181818;
     top: 12px;
     left: 36px;
@@ -316,14 +339,8 @@ p.param-value {
 /* ----------------------------------------------- */
 
 .servicesList {
-    display: flex;
     justify-content: space-around;
     padding: 0 20px 20px;
-}
-
-.servListCol {
-    color: white;
-    font-family: 'CenturyGothic';
 }
 
 .servListCol p {
@@ -346,20 +363,19 @@ p.param-value {
 
 /* ------------------------------------------------- */
 
-.alertaYellow li {
-    color: white;
+.alertaYellow li,
+.alertaRed li {
     list-style: none;
-    background: url(assets/peligroYellow.svg) no-repeat 0 4px;
     padding-left: 20px;
     padding-top: 4px;
 }
 
+.alertaYellow li {
+    background: url(assets/peligroYellow.svg) no-repeat 0 4px;
+}
+
 .alertaRed li {
-    color: white;
-    list-style: none;
     background: url(assets/peligroRed.svg) no-repeat 0 4px;
-    padding-left: 20px;
-    padding-top: 4px;
 }
 
 .otherInfo {
@@ -367,16 +383,11 @@ p.param-value {
 }
 
 .otherInfoContacts {
-    display: flex;
-    align-items: center;
     padding: 10px 0px 20px 20px;
 }
 
 .otherInfoContacts a {
-    color: white;
-    text-decoration: none;
     font-size: 24px;
-    font-family: 'CenturyGothic';
     font-weight: 500;
 }
 
@@ -399,8 +410,6 @@ footer {
 }
 
 .footerContent ul {
-    display: flex;
-    list-style-type: none;
     justify-content: center;
 }
 
@@ -408,16 +417,13 @@ footer {
     padding: 25px;
 }
 
-.footerContent li a {
-    text-decoration: none;
-    color: white;
-}
-
 .footerContent p {
-    text-align: center;
     color: #757575;
     line-height: 26px;
 }
+
+
+/* ----------------------styles for phones------------------------------ */
 
 @media screen and (max-width: 870px) {
     body,
@@ -432,40 +438,60 @@ footer {
     .otherInfo,
     .footerContent ul,
     .hideOnPhone,
-    #gallery {
+    #gallery,
+    .menu li.lang {
         display: none;
     }
     .aboutMeTouch,
     .contactAdressTouch,
     .otherInfoTouch,
     .aboutMeContactsTouch,
-    .mob-socialContacts {
+    .mob-socialContacts,
+    .swiper-container,
+    .mob-titleIfServList hr {
         display: block;
     }
-    .flex-revert {
+    .flex-revert,
+    .toggle,
+    .menu,
+    .swiper-slide,
+    .contactAdressTouch,
+    .mob-titleIfServList,
+    .aboutMeContactsTouch,
+    .mob-servList,
+    .aboutMeContactsTouch .contactSocial {
         display: flex;
+    }
+    .flex-revert {
         flex-direction: column-reverse;
     }
-    .servicesList {
+    .servicesList,
+    .aboutMeContactsTouch,
+    .menu {
         flex-direction: column;
+    }
+    .menu,
+    .swiper-slide,
+    .contactAdressTouch,
+    .mob-titleIfServList,
+    .aboutMeContactsTouch {
+        align-items: center;
+    }
+    .flex-revert {
+        flex-direction: column-reverse;
     }
     /* ----------------------------------------------- */
     .wrapper {
         max-width: 870px;
     }
-    .menu li.lang {
-        display: none;
-    }
     .toggle {
         width: 100%;
-        display: flex;
         justify-content: space-between;
         font-size: 26px;
         line-height: 40px;
-        /* font-weight: bold; */
         background: #fea500;
-        transition: all .1s linear;
         color: #000;
+        transition: all .1s linear;
     }
     #checkbox-menu:checked+label .touch li {
         opacity: 1;
@@ -476,10 +502,7 @@ footer {
         height: 200px;
     }
     .menu {
-        display: flex;
-        flex-direction: column;
         justify-content: space-around;
-        align-items: center;
         height: 0;
         transition: height .3s linear;
     }
@@ -511,39 +534,17 @@ footer {
     }
     /* ----------------------------------------------------- */
     .swiper-container {
-        display: block;
         width: 100%;
         height: 100%;
     }
-    /* html,
-    body {
-        position: relative;
-        height: 100%;
-    } */
-    /* body {
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-    } */
     .swiper-slide {
         text-align: center;
-        /* font-size: 18px; */
-        /* background: #fff; */
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         -webkit-justify-content: center;
         justify-content: center;
         -webkit-box-align: center;
         -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
     }
     .swiper-slide img {
         width: 100%;
@@ -588,8 +589,6 @@ footer {
         padding-top: 0;
     }
     .contactAdressTouch {
-        display: flex;
-        align-items: center;
         justify-content: center;
         padding: 18px 0;
     }
@@ -629,16 +628,12 @@ footer {
         margin-right: 10px;
     }
     .mob-titleIfServList {
-        display: flex;
-        align-items: center;
         margin-top: 20px;
     }
     .mob-titleIfServList hr {
-        display: block;
         width: 100%
     }
     .mob-servList {
-        display: flex;
         justify-content: space-evenly;
     }
     .mob-servList ul {
@@ -649,13 +644,15 @@ footer {
         margin-left: 10px;
         max-width: 210px;
     }
+    .mob-greenCheck li,
+    .mob-yellowCheck li {
+        margin-left: 18px;
+    }
     .mob-greenCheck li {
         list-style-image: url(assets/mob-serv-list/foursquare-check-in-green.svg);
-        margin-left: 18px;
     }
     .mob-yellowCheck li {
         list-style-image: url(assets/mob-serv-list/foursquare-check-in-yellow.svg);
-        margin-left: 18px;
     }
     .mob-attentionRed li {
         list-style-image: url(assets/mob-serv-list/peligroRed.svg);
@@ -688,14 +685,8 @@ footer {
         width: 240px;
         text-align: center;
     }
-    .aboutMeContactsTouch {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     .aboutMeContactsTouch .contactSocial {
         width: 200px;
-        display: flex;
         justify-content: space-around;
         padding: 20px 0;
     }
