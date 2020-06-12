@@ -15,6 +15,17 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 
+p,
+a,
+li {
+    color: #fff;
+    text-decoration: none;
+}
+
+.font_for_numbers {
+    font-family: 'CenturyGothic';
+}
+
 
 /* -----------------------------all---------------------------- */
 
@@ -30,6 +41,10 @@ html {
     width: 100%;
 }
 
+.text_center {
+    text-align: center;
+}
+
 #checkbox-menu,
 .toggle,
 .aboutMeTouch,
@@ -42,92 +57,29 @@ html {
     display: none;
 }
 
-.menu li a:hover,
-.menu li a.check {
-    border-bottom: 1px solid #ffa500;
-}
-
-.contentTitle,
-.menu li a,
-.aboutMeText,
-.contactAdress,
-p.param-value,
-.otherInfoContacts a,
-.footerContent li a,
-.servListCol,
-.alertaYellow li,
-.alertaRed li,
-.text-color-white p {
-    color: #fff;
-}
-
-header,
-.menu,
-.aboutMePhotoBlock,
-.aboutMeContacts,
-.contactAdress,
-.contactSocial,
-.borderBlock,
-.servicesList,
-.otherInfoContacts,
-.footerContent ul {
+.footerContent ul,
+.display_flex {
     display: flex;
 }
 
 .aboutMePhotoBlock,
 .aboutMeContacts,
-.borderBlock {
+.borderBlock,
+.flex_space-between {
+    display: flex;
     justify-content: space-between;
 }
 
-.contactAdress,
-.contactSocial,
-menu,
-.otherInfoContacts {
+.bl_cont_pos-center {
+    display: flex;
     align-items: center;
-}
-
-.aboutMePhotoBlock,
-.aboutMeContacts,
-.contactSocial,
-.borderBlock {
-    flex-wrap: nowrap;
-}
-
-.contactNumber a,
-.otherInfoContacts a,
-.footerContent li a,
-.menu li a {
-    text-decoration: none;
-}
-
-.menu li a,
-.contactAdress,
-.contactNumber,
-.tarif {
-    white-space: nowrap;
-}
-
-.contentTitle,
-.price,
-.tarif,
-.param-item,
-.footerContent p {
-    text-align: center;
-}
-
-.otherInfoContacts a,
-.contactNumber a,
-.price p,
-p.param-value,
-.servListCol {
-    font-family: 'CenturyGothic';
 }
 
 
 /* ------------------------- header ------------------------ */
 
 header {
+    display: flex;
     background-color: #000;
 }
 
@@ -158,6 +110,11 @@ header {
     padding: 1px 0;
     font-size: 15px;
     font-weight: 600;
+}
+
+.menu li a:hover,
+.menu li a.check {
+    border-bottom: 1px solid #ffa500;
 }
 
 .menu li a.uncheck {
@@ -281,6 +238,7 @@ header {
 
 .tarif {
     position: relative;
+    white-space: nowrap;
     color: #7a7a7a;
     background-color: #181818;
     width: 50px;
@@ -339,6 +297,7 @@ p.param-value {
 /* ----------------------------------------------- */
 
 .servicesList {
+    display: flex;
     justify-content: space-around;
     padding: 0 20px 20px;
 }
