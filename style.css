@@ -167,12 +167,13 @@ header {
 }
 
 .contactNumber {
-    background-color: #edbe90;
     padding: 2px 30px;
     border-radius: 50px;
     letter-spacing: 2px;
     font-size: 30px;
     font-weight: 700;
+    background: #edbe90;
+    box-shadow: 0px 13px 22px -7px rgba(0, 0, 0, 0.54);
 }
 
 .contactNumber a {
@@ -299,7 +300,7 @@ p.param-value {
 .servicesList {
     display: flex;
     justify-content: space-around;
-    padding: 0 20px 20px;
+    padding: 10px 20px;
 }
 
 .servListCol p {
@@ -537,7 +538,7 @@ footer {
         padding-left: 6px;
         width: 24px;
         top: 10px;
-        left: 22px;
+        left: 17px;
     }
     .param-item,
     .param-icon {
@@ -599,6 +600,7 @@ footer {
         list-style: none;
     }
     .servListCol li {
+        margin-top: 15px;
         font-size: 12px;
         margin-left: 10px;
         max-width: 210px;
@@ -629,7 +631,7 @@ footer {
         margin: 0 15px 0 0;
     }
     .mob-socialContacts {
-        margin: 10px 0 0 10px;
+        margin: 20px 0 0 10px;
     }
     .contactSocial {
         justify-content: flex-start;
@@ -644,10 +646,13 @@ footer {
         width: 240px;
         text-align: center;
     }
+    .aboutMeContactsTouch {
+        padding: 20px 0;
+    }
     .aboutMeContactsTouch .contactSocial {
         width: 200px;
         justify-content: space-around;
-        padding: 20px 0;
+        padding: 30px 0 0;
     }
     footer {
         height: 35px;
@@ -662,14 +667,17 @@ footer {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 390px) {
+    .servicesList {
+        padding: 15px
+    }
     .param-item {
         padding: 5px;
     }
     .param-icon {
-        padding-left: 6px;
+        padding-left: 4px;
         width: 22px;
         top: 8px;
-        left: 18px;
+        left: 17px;
     }
     .param-icon img {
         width: 14px;
