@@ -360,6 +360,10 @@ p.param-value {
     margin-left: 8px;
 }
 
+#btnCall {
+    display: none;
+}
+
 
 /* -------------------------------------------------- */
 
@@ -663,6 +667,14 @@ footer {
     }
      :root {
         --swiper-navigation-size: 24px!important;
+    }
+    #btnCall {
+        display: block;
+        position: fixed;
+        left: 50%;
+        bottom: 30px;
+        margin-left: -145px;
+        z-index: 1;
     }
 }
 
